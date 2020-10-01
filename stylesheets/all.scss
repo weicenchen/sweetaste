@@ -1,0 +1,393 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "helpers/grid";
+@import "helpers/reset";
+
+/* Latout */
+
+body{
+	width: 100%;
+	font-family: "Segoe UI","Microsoft JhengHei",sans-serif;
+}
+
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+
+.btn-cart{
+    background-color: transparent;
+}
+
+.navbar-relative{
+    position: relative;
+}
+
+.dropdown-menu-right {
+    position: absolute;
+    top: 69px;
+    right: 0px;
+    left: auto;
+}
+
+.footer-email-group{
+    @include phone{
+        margin-left: 30px;
+        margin-right: 30px;        
+    }
+    @include iphone5{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.input-email{
+    position: relative;
+}
+
+.icon-email{
+    position: absolute;
+    font-size: 22px;
+    top: 16px;
+    left: 20px;
+    z-index: 30;
+}
+
+.information{
+    line-height: 1.5em;
+}
+
+/* Index */
+header .header-bg{
+    height: 496px;
+    z-index: -10;
+    @include phone{
+        height: 300px;
+    }
+}
+
+
+header .square-img-section{
+    margin-top: -90px;
+}
+
+header .square-img1, header .square-img2, header .square-img3{
+    display: flex;
+    height: 256px;
+    writing-mode: vertical-lr;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #fff;
+    color: #fff;
+    transition: color .5s;
+    @include phone{
+        height: 180px;
+    }
+}
+
+header .square-img1:hover, header .square-img2:hover, header .square-img3:hover{
+    color: #EA5514;
+}
+
+.vertical-text1, .vertical-text2, .vertical-text3{
+    font-size: 24px;
+    letter-spacing: 10px;
+    z-index: 2;
+    @include phone{
+        font-size: 20px;
+    }
+}
+
+.square-img-colorcover1, .square-img-colorcover2, .square-img-colorcover3{
+    background-color: rgba($color: #EA5514, $alpha: 0.8);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: background-color .5s;
+}
+
+.square-img-colorcover1:hover, .square-img-colorcover2:hover, .square-img-colorcover3:hover{
+    background-color: rgba($color: #ffe180, $alpha: 0.8);
+}
+
+header .square-img-yellowcover{
+    background-color: rgba($color: #ffe180, $alpha: 0.8) !important;
+}
+
+.square-img-bg1, .square-img-bg2, .square-img-bg3{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: blur(5px);
+    transition: filter .5s;
+}
+
+.square-img-bg-clear{
+    filter: blur(0px) !important;
+}
+
+.why{
+    position: relative;
+    @include phone{
+        position: static;
+    }
+}
+
+.why-img{
+    height: 460px;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    @include phone{
+        height: 250px;
+        position: static;
+    }
+}
+
+.why-content{
+    writing-mode: vertical-rl;
+    line-height: 2.5em;
+    @include md{
+        line-height: 1.9em;
+    }
+    @include phone{
+        writing-mode: horizontal-tb;
+    }
+}
+
+.why-title-lg{
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.why-eat-title-lg{
+    right: 500px;
+    @include lg{
+        right: 400px;
+    }
+    @include md{
+        right: 300px;
+    }
+}
+
+.card-top{
+    position: relative;
+    height: 315px;
+    @include pad{
+        height: 250px;
+    }
+    @include phone{
+        height: 315px;
+    }
+}
+
+.select{
+    position: absolute;
+    writing-mode: vertical-lr;
+    top: 0;
+    left: 20px;
+    letter-spacing: 0.4em;
+}
+
+.heart1, .heart2, .heart3, .heart4, .heart5, .heart6{
+    text-decoration: none !important;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 1.3em;
+}
+
+.product-info{
+    font-size: 18px;
+}
+
+.add-cart{
+    text-decoration: none !important;
+    font-size: 22px;
+}
+
+/* Product */
+
+.product-bg{
+    position: relative;
+}
+
+.product-title{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    @include phone{
+        width: 60px;
+    }
+}
+
+/* login */
+
+.input-login{
+    position: relative;
+}
+
+.icon-login{
+    position: absolute;
+    font-size: 18px;
+    top: 22px;
+    left: 24px;
+    z-index: 30;
+}
+
+.btn-social{
+    height: 56px;
+}
+
+/* Cart */
+
+.cart-bg{
+    height: 110px;
+    width: 110px;
+    @include phone{
+        width: 100%;
+    }
+}
+
+.cart-input{
+    @include pad{
+        padding-left: 11px !important;
+        padding-right: 10px !important;
+    }
+    @include iphone5{
+        padding-left: 12px !important;
+    }
+}
+
+.price{
+    @include md{
+        border-top: 1px solid #fbeae2;
+    }
+}
+
+/* Checkout */
+
+.timeline{
+    position: relative;
+}
+
+.timeline::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    transform: translateY(-50%);
+    background-color: #fbeae2;
+}
+
+.timeline-pointer{
+    position: relative;
+}
+
+.timeline-pointer::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12px;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 1px solid #fbeae2;
+    background-color: #EA5514;
+    z-index: 1;
+}
+
+.time-line-pointer-inside{
+    position: relative;
+}
+
+.time-line-pointer-inside::after{
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 23px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background-color: #fbeae2;
+    z-index: 2;
+}
+
+.order{
+    border: 1px solid #fbeae2;
+    @include phone{
+        border: none;
+    }
+}
+
+.timeline-checked{
+    position: relative;
+}
+
+.timeline-checked::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12px;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 1px solid #fbeae2;
+    background-color: #fbeae2;
+    z-index: 1;
+}
+
+.check{
+    position: absolute;
+    left: 3px;
+    top: 16px;
+    z-index: 2;
+}
+
+.credit{
+    position: relative;
+}
+
+.credit_icon{
+    position: absolute;
+    top: 52px;
+    right: 20px;
+    font-size: 20px;
+}
+
+/* Checkout_Success */
+
+.checkout-success-bg{
+    height: 460px;
+    @include phone{
+        height: 518px;
+    }
+}
+
+.timeline-primary::after{
+    background-color: #EA5514;
+}
+
+.timeline-checked-primary::after{
+    top: -11px;
+    border: 1px solid #EA5514;
+    background-color: #EA5514;
+}
+
+.check-mint{
+    top: -7px;
+}

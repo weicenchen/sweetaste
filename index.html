@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge",chrome=1>
+    <meta name="author" content="Sweetaste">
+    <link rel="shortcut icon" href="images/favicon_48.ico" type="image/x-icon">
+    <title>六角甜點工坊 - 首頁</title>
+
+	<meta name="description" content="六角甜點工坊，不懂得享用甜點是罪過">
+
+	<meta property="og:title" content="不懂得享用甜點是罪過  | 六角甜點工坊">
+	<meta property="og:description" content="現在就預定六角甜點工坊人氣蛋糕，好吃到保證讓您返家後口水連續流一整個月!">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.hexschool.com/">
+	<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Fevents%2F2019-js-starter%2Ffb-cover.png?alt=media&token=6d679c21-c0aa-454a-ad16-78c55b91dd50">
+	<meta property="og:site_name" content="六角甜點工坊">
+	<meta property="og:locale" content="zh_TW">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container navbar-relative">
+            <button class="navbar-toggler border-0 ml-1" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 class="text-hide">六角甜點工坊
+                <a class="navbar-brand d-inline-block" href="index.html">
+                    <img class="d-none d-md-inline-block" src="images/logo-all-dark.svg" width="220" height="40"
+                        alt="logo">
+                    <img class="d-inline-block d-md-none" src="images/logotype-sm-dark.svg" width="114" height="18"
+                        alt="logo">
+                </a>
+            </h1>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex ml-md-auto font-weight-bold">
+                    <li class="nav-item active">
+                        <a class="nav-link px-5" href="index.html">首頁<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-5" href="product.html">甜點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-5" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-cart text-primary ml-md-1" href="#" data-toggle="dropdown" data-flip="false"><i
+                    class="fas fa-shopping-cart"></i></button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px" data-offset="400">
+                <div class="px-4 py-3">
+                    <h6 class="pb-2">已選擇商品</h6>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="刪除 焦糖瑪卡龍 2 個">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="bg-cover ml-1 my-1"
+                                        style="background-image: url(http://bit.ly/2QvsT63); width: 60px; height: 60px;">
+                                    </div>
+                                </td>
+                                <td class="align-middle">焦糖瑪卡龍</td>
+                                <td class="align-middle text-center">2個</td>
+                                <td class="align-middle text-right">$900</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="刪除 檸檬蜂蜜蛋糕 2 個">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="bg-cover ml-1 my-1"
+                                        style="background-image: url(http://bit.ly/2zBDAxX); width: 60px; height: 60px;">
+                                    </div>
+                                </td>
+                                <td class="align-middle">檸檬蜂蜜蛋糕</td>
+                                <td class="align-middle text-center">2個</td>
+                                <td class="align-middle text-right">$900</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="刪除 藍莓格子鬆餅 2 個">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="bg-cover ml-1 my-1"
+                                        style="background-image: url(http://bit.ly/2zKOP7w); width: 60px; height: 60px;">
+                                    </div>
+                                </td>
+                                <td class="align-middle">藍莓格子鬆餅</td>
+                                <td class="align-middle text-center">2個</td>
+                                <td class="align-middle text-right">$900</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="cart.html" class="btn btn-primary btn-block">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> 結帳去
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="container pt-100">
+        <div class="header-bg bg-cover" style="background-image: url(http://bit.ly/2OhbMHr);"></div>
+        <div class="row no-gutters justify-content-center square-img-section">
+            <div class="col-md-10">
+                <div class="row no-gutters">
+                    <a href="#" class="col-4 square-img1">
+                        <span class="vertical-text1 font-weight-bold">本日精選</span>
+                        <div class="square-img-colorcover1"></div>
+                        <div class="square-img-bg1 bg-cover" style="background-image: url(http://bit.ly/2QbVsVR);">
+                        </div>
+                    </a>
+                    <a href="#" class="col-4 square-img2">
+                        <span class="vertical-text2 font-weight-bold">人氣推薦</span>
+                        <div class="square-img-colorcover2"></div>
+                        <div class="square-img-bg2 bg-cover" style="background-image: url(http://bit.ly/2QiWeQW);">
+                        </div>
+                    </a>
+                    <a href="#" class="col-4 square-img3">
+                        <span class="vertical-text3 font-weight-bold">新品上市</span>
+                        <div class="square-img-colorcover3"></div>
+                        <div class="square-img-bg3 bg-cover" style="background-image: url(http://bit.ly/2R5tqwD);">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="why-choose-title-sm container">
+        <div class="d-flex justify-content-center py-5 d-md-none">
+            <img src="images/sm-為什麼選擇了做甜點.svg" width="196px" alt="why-choose">
+        </div>
+    </div>
+    <section class="why-choose bg-mint">
+        <div class="container">
+            <div class="row no-gutters justify-content-between my-md-10 py-md-9 why">
+                <div class="col-md-5 bg-cover why-img" style="background-image: url(http://bit.ly/2xPn7Eq);"></div>
+                <div class="col-md-3 text-info ml-xl-530 ml-lg-410 ml-md-310">
+                    <p class="why-content my-5 text-center my-md-0">
+                        滾滾長江向東流，不再回頭，多少英雄<br>
+                        像翻飛的浪花般消逝。爭什麼是與非、<br>
+                        成功與失敗，都是短暫不長久。只有青<br>
+                        山依然存在，依然的日升日落。江上白<br>
+                        髮漁翁，早已習慣於四時的變化。和朋<br>
+                        <br>
+                        友難得見了面，痛快的暢飲一杯酒。古<br>
+                        往今來的紛紛擾擾，成爲閒談的材料。
+                    </p>
+                </div>
+                <div class="col-md-2 why-title-lg d-md-block d-none">
+                    <img src="images/lg-為什麼選擇了做甜點.svg" height="307px" alt="why-choose">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="why-eat-title-sm container">
+        <div class="d-flex justify-content-center py-5 d-md-none">
+            <img src="images/sm-為什麼一定要吃甜點.svg" width="196px" alt="why-eat">
+        </div>
+    </div>
+    <section class="why-eat bg-mint">
+        <div class="container">
+            <div class="row no-gutters justify-content-between py-md-9 why">
+                <div class="col-md-2 why-title-lg why-eat-title-lg d-md-block d-none">
+                    <img src="images/lg-為什麼一定要吃甜點.svg" height="307px" alt="why-eat">
+                </div>
+                <div class="col-md-5 bg-cover why-img" style="background-image: url(http://bit.ly/2zzAQS4); right: 0;">
+                </div>
+                <div class="col-md-3 text-info">
+                    <p class="why-content my-5 text-center my-md-0">
+                        滾滾長江向東流，不再回頭，多少英雄<br>
+                        像翻飛的浪花般消逝。爭什麼是與非、<br>
+                        成功與失敗，都是短暫不長久。只有青<br>
+                        山依然存在，依然的日升日落。江上白<br>
+                        髮漁翁，早已習慣於四時的變化。和朋<br>
+                        <br>
+                        友難得見了面，痛快的暢飲一杯酒。古<br>
+                        往今來的紛紛擾擾，成爲閒談的材料。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="no-reason container py-5 my-md-7 d-flex justify-content-center">
+        <div class="d-md-none">
+            <img src="images/sm-想吃甜點是不需要理由的.svg" width="196px" alt="no reason">
+        </div>
+        <div class="d-md-block d-none">
+            <img src="images/lg-想吃甜點是不需要理由的.svg" height="328px" alt="no reason">
+        </div>
+    </section>
+    <section class="product-list container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-10">
+                <div class="card border-0">
+                    <div class="card-img-top bg-cover card-top"
+                        style="background-image: url(http://bit.ly/2zBjQuq);">
+                        <span class="select bg-primary text-white font-weight-bold p-1">本日精選</span>
+                        <a class="heart1 far fa-heart text-primary" href="#"></a>
+                    </div>
+                    <div class="card-body p-0 text-primary text-center">
+                        <div class="product-info row no-gutters">
+                            <div class="col-7 border border-mint py-2">
+                                <p>焦糖馬卡龍</p>
+                            </div>
+                            <div class="col-5 border border-mint py-2 font-weight-bold">
+                                <p>NT$ 450</p>
+                            </div>
+                        </div>
+                        <a href="#" class="add-cart btn-block btn-mint font-weight-bold py-2">加入購物車</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <div class="card border-0">
+                    <div class="card-img-top bg-cover card-top"
+                        style="background-image: url(http://bit.ly/2zBDAxX);">
+                        <span class="select bg-primary text-white font-weight-bold p-1">本日精選</span>
+                        <a class="heart2 far fa-heart text-primary" href="#"></a>
+                    </div>
+                    <div class="card-body p-0 text-primary text-center">
+                        <div class="product-info row no-gutters">
+                            <div class="col-7 border border-mint py-2">
+                                <p>焦糖馬卡龍</p>
+                            </div>
+                            <div class="col-5 border border-mint py-2 font-weight-bold">
+                                <p>NT$ 450</p>
+                            </div>
+                        </div>
+                        <a href="#" class="add-cart btn-block btn-mint font-weight-bold py-2">加入購物車</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <div class="card border-0">
+                    <div class="card-img-top bg-cover card-top"
+                        style="background-image: url(http://bit.ly/2QbVsVR);">
+                        <span class="select bg-primary text-white font-weight-bold p-1">本日精選</span>
+                        <a class="heart3 far fa-heart text-primary" href="#"></a>
+                    </div>
+                    <div class="card-body p-0 text-primary text-center">
+                        <div class="product-info row no-gutters">
+                            <div class="col-7 border border-mint py-2">
+                                <p>焦糖馬卡龍</p>
+                            </div>
+                            <div class="col-5 border border-mint py-2 font-weight-bold">
+                                <p>NT$ 450</p>
+                            </div>
+                        </div>
+                        <a href="#" class="add-cart btn-block btn-mint font-weight-bold py-2">加入購物車</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-8">
+        <div class="bg-primary">
+            <div class="container py-5">
+                <div class="row footer-email-group">
+                    <div class="col-md-5 mr-auto d-flex align-items-center mb-5 mb-md-0">
+                        <img src="images/logo-light.svg" width="40px" alt="logo">
+                        <p class="text-white font-weight-bold ml-3" style="font-size: 22px;">訂閱你我的甜蜜郵件</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="input-email input-group pl-8 bg-mint">
+                            <label for="email" class="icon-email text-primary fas fa-envelope"></label>
+                            <input type="email" id="email" class="form-control py-4 bg-mint border-0">
+                            <button class="btn btn-accent fas fa-arrow-right"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-mint">
+            <div class="container text-primary">
+                <div class="row justify-content-between pt-6 mx-5 mx-md-auto">
+                    <div class="col-md-3">
+                        <img src="images/logotype-sm-dark.svg" width="171px" alt="logo">
+                        <div class="information mt-md-115 mt-6">
+                            <p>07-1234-5678</p>
+                            <p>sweetaste@email.com</p>
+                            <p>800高雄市新興區幸福路520號</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-none d-md-flex justify-content-end">
+                        <img src="images/sm-今天是個吃甜點的好日子.svg" height="219px" alt="good day">
+                    </div>
+                </div>
+                <div class="row py-5 justify-content-between align-items-end mx-5 mx-md-auto">
+                    <div class="col-md-2">
+                        <a href="#" class="mr-1"><img src="images/ic-line@.svg" width="32px" alt="line"></a>
+                        <a href="#"><img src="images/ic-facebook.svg" width="32px" alt="facebook"></a>
+                    </div>
+                    <div class="col-md-6 text-md-right mt-3 mt-md-0">
+                        <p>Ⓒ 2018 Sweetaste* All Rights Rserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-accent">
+                    <h5 class="modal-title">刪除商品</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>是否確認刪除商品</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-accent" data-dismiss="modal">否</button>
+                    <button type="button" class="btn btn-secondary ml-3">是</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.square-img1').hover(function () {
+                event.preventDefault();
+                $('.square-img-bg1').toggleClass('square-img-bg-clear');
+            });
+            $('.square-img2').hover(function () {
+                event.preventDefault();
+                $('.square-img-bg2').toggleClass('square-img-bg-clear');
+            });
+            $('.square-img3').hover(function () {
+                event.preventDefault();
+                $('.square-img-bg3').toggleClass('square-img-bg-clear');
+            });
+            $('.vertical-text1').hover(function () {
+                event.preventDefault();
+                $('.square-img-colorcover1').toggleClass('square-img-yellowcover');
+            });
+            $('.vertical-text2').hover(function () {
+                event.preventDefault();
+                $('.square-img-colorcover2').toggleClass('square-img-yellowcover');
+            });
+            $('.vertical-text3').hover(function () {
+                event.preventDefault();
+                $('.square-img-colorcover3').toggleClass('square-img-yellowcover');
+            });
+
+            /* index 愛心切換 */
+            $(".heart1").click(function (event) {
+                event.preventDefault();
+                $(".heart1").toggleClass("fas");
+                $(".heart1").toggleClass("far");
+            });
+            $(".heart2").click(function (event) {
+                event.preventDefault();
+                $(".heart2").toggleClass("fas");
+                $(".heart2").toggleClass("far");
+            });
+            $(".heart3").click(function (event) {
+                event.preventDefault();
+                $(".heart3").toggleClass("fas");
+                $(".heart3").toggleClass("far");
+            });
+
+            /*modal*/
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+                var title = button.data('title') // 使用 data-* 來取得特定內容
+
+                var modal = $(this)
+                modal.find('.modal-title').text('確認' + title) // 寫入資料
+            });
+        });
+    </script>
+</body>
+
+</html>

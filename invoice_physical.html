@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" ,chrome=1>
+    <meta name="author" content="Sweetaste">
+    <link rel="shortcut icon" href="images/favicon_48.ico" type="image/x-icon">
+    <title>六角甜點工坊 - 發票</title>
+
+    <meta name="description" content="六角甜點工坊，不懂得享用甜點是罪過">
+
+    <meta property="og:title" content="不懂得享用甜點是罪過  | 六角甜點工坊">
+    <meta property="og:description" content="現在就預定六角甜點工坊人氣蛋糕，好吃到保證讓您返家後口水連續流一整個月!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hexschool.com/">
+    <meta property="og:image"
+        content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Fevents%2F2019-js-starter%2Ffb-cover.png?alt=media&token=6d679c21-c0aa-454a-ad16-78c55b91dd50">
+    <meta property="og:site_name" content="六角甜點工坊">
+    <meta property="og:locale" content="zh_TW">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container navbar-relative">
+            <button class="navbar-toggler border-0 ml-1" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 class="text-hide">六角甜點工坊
+                <a class="navbar-brand d-inline-block" href="index.html">
+                    <img class="d-none d-md-inline-block" src="images/logo-all-dark.svg" width="220" height="40"
+                        alt="logo">
+                    <img class="d-inline-block d-md-none" src="images/logotype-sm-dark.svg" width="114" height="18"
+                        alt="logo">
+                </a>
+            </h1>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex ml-md-auto font-weight-bold">
+                    <li class="nav-item">
+                        <a class="nav-link px-5" href="index.html">首頁<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-5" href="product.html">甜點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-5" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-cart text-primary ml-md-1" href="#" data-toggle="dropdown" data-flip="false"><i
+                    class="fas fa-shopping-cart"></i></button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px" data-offset="400">
+                <div class="px-4 py-3">
+                    <h6 class="pb-2">已選擇商品</h6>
+                    <a href="#" class="btn btn-primary btn-block">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> 結帳去
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="container-fluid pt-100 px-0">
+        <div class="row pt-md-5 justify-content-center">
+            <div class="col-lg-7 col-md-11">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="bg-primary p-5 px-md-6">
+                            <div class="row pb-5">
+                                <div class="col-6">
+                                    <h2 class="h2 text-mint font-weight-bold">發票</h2>
+                                </div>
+                                <div class="col-6 timeline">
+                                    <div class="row justify-content-between text-primary">
+                                        <div class="col-1 timeline-checked">
+                                            <i class="fas fa-check check"></i>
+                                        </div>
+                                        <div class="col-1 timeline-checked">
+                                            <i class="fas fa-check check"></i>
+                                        </div>
+                                        <div class="col-1 timeline-pointer">
+                                            <div class="time-line-pointer-inside"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters border border-mint mb-5">
+                                <div class="col-6">
+                                    <a href="invoice_electronic.html"
+                                        class="btn btn-primary btn-lg btn-block rounded-0 text-mint font-weight-bold py-2">電子發票</a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="invoice_physical.html"
+                                        class="btn btn-mint btn-lg btn-block rounded-0 text-primary font-weight-bold py-2">郵寄發票</a>
+                                </div>
+                            </div>
+                            <form>
+                                <div class="form-row align-items-end">
+                                    <div class="form-group col-6 mb-1">
+                                        <label for="county" class="h5 text-mint font-weight-bold">地址</label>
+                                        <select id="county" class="form-control" style="font-size: 16px;">
+                                            <option selected>高雄市</option>
+                                            <option>臺北市</option>
+                                            <option>新北市</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-6 d-flex flex-column align-items-end mb-1">
+                                        <div class="form-check pb-1 d-flex align-items-start">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label h6 text-mint font-weight-bold" for="gridCheck">
+                                                同運送地址
+                                            </label>
+                                        </div>
+                                        <select id="district" class="form-control" style="font-size: 16px;">
+                                            <option selected>新興區</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <input type="text" class="form-control" id="address" placeholder="幸福路520號"
+                                            style="font-size: 16px;">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="uniform_numbers" class="h5 text-mint font-weight-bold">統一編號</label>
+                                    <input type="text" class="form-control" id="uniform_numbers" placeholder="12345678">
+                                </div>
+                            </form>
+                        </div>
+                        <a href="checkout_success.html" class="btn btn-accent btn-lg btn-block text-primary font-weight-bold py-2 rounded-0"
+                            style="font-size: 24px;">確認結帳</a>
+                    </div>
+                    <div class="col-md-5 d-none d-md-block text-info">
+                        <div class="order">
+                            <h3 class="h4 bg-mint text-center font-weight-bold py-2">訂單摘要</h3>
+                            <div class="row no-gutters px-md-3 py-2">
+                                <div class="col-6 h6"><span>小計</span></div>
+                                <div class="col-6 text-right h6"><span>NT$ 2,700</span></div>
+                                <div class="col-6 h6 pt-1"><span>運費</span></div>
+                                <div class="col-6 text-right h6 pt-1">
+                                    <span">NT$ 300</span>
+                                </div>
+                                <div class="col-6 h5 font-weight-bold pt-2"><span>總計</span></div>
+                                <div class="col-6 text-right h5 font-weight-bold pt-2"><span>NT$ 3,000</span></div>
+                            </div>
+                        </div>
+                        <div class="order mt-3">
+                            <h3 class="h4 bg-mint text-center font-weight-bold py-2">購物清單</h3>
+                            <div class="py-2 px-3">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-6">
+                                        <div class="bg-cover"
+                                            style="height: 80px; background-image: url(https://bit.ly/2QvsT63);"></div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h4 class="h6">焦糖馬卡龍 (2)</h4>
+                                        <p class="h5 font-weight-bold">NT$ 900</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between align-items-center py-2">
+                                    <div class="col-6">
+                                        <div class="bg-cover"
+                                            style="height: 80px; background-image: url(https://bit.ly/2zBDAxX);"></div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h4 class="h6">焦糖馬卡龍 (2)</h4>
+                                        <p class="h5 font-weight-bold">NT$ 900</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-6">
+                                        <div class="bg-cover"
+                                            style="height: 80px; background-image: url(https://bit.ly/2zKOP7w);"></div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h4 class="h6">焦糖馬卡龍 (2)</h4>
+                                        <p class="h5 font-weight-bold">NT$ 900</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-md-8">
+        <div class="bg-primary">
+            <div class="container py-5">
+                <div class="row footer-email-group">
+                    <div class="col-md-5 mr-auto d-flex align-items-center mb-5 mb-md-0">
+                        <img src="images/logo-light.svg" width="40px" alt="logo">
+                        <p class="text-white font-weight-bold ml-3" style="font-size: 22px;">訂閱你我的甜蜜郵件</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="input-email input-group pl-8 bg-mint">
+                            <label for="email" class="icon-email text-primary fas fa-envelope"></label>
+                            <input type="email" id="email" class="form-control py-4 bg-mint border-0">
+                            <button class="btn btn-accent fas fa-arrow-right"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-mint">
+            <div class="container text-primary">
+                <div class="row justify-content-between pt-6 mx-5 mx-md-auto">
+                    <div class="col-md-3">
+                        <img src="images/logotype-sm-dark.svg" width="171px" alt="logo">
+                        <div class="information mt-md-115 mt-6">
+                            <p>07-1234-5678</p>
+                            <p>sweetaste@email.com</p>
+                            <p>800高雄市新興區幸福路520號</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-none d-md-flex justify-content-end">
+                        <img src="images/sm-今天是個吃甜點的好日子.svg" height="219px" alt="good day">
+                    </div>
+                </div>
+                <div class="row py-5 justify-content-between align-items-end mx-5 mx-md-auto">
+                    <div class="col-md-2">
+                        <a href="#" class="mr-1"><img src="images/ic-line@.svg" width="32px" alt="line"></a>
+                        <a href="#"><img src="images/ic-facebook.svg" width="32px" alt="facebook"></a>
+                    </div>
+                    <div class="col-md-6 text-md-right mt-3 mt-md-0">
+                        <p>Ⓒ 2018 Sweetaste* All Rights Rserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-accent">
+                    <h5 class="modal-title">刪除商品</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>是否確認刪除商品</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-accent" data-dismiss="modal">否</button>
+                    <button type="button" class="btn btn-secondary ml-3">是</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            /*modal*/
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+                var title = button.data('title') // 使用 data-* 來取得特定內容
+
+                var modal = $(this)
+                modal.find('.modal-title').text('確認' + title) // 寫入資料
+            });
+        });
+    </script>
+</body>
+
+</html>
