@@ -14227,6 +14227,11 @@ table {
 }
 
 /* Latout */
+header, section, footer {
+  overflow: hidden !important;
+  width: 100%;
+}
+
 body {
   width: 100%;
   font-family: "Segoe UI","Microsoft JhengHei",sans-serif;
